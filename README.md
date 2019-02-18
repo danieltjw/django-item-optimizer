@@ -22,7 +22,7 @@ App with a shared item database, user specific inventory of items and units, and
 
   - Benchmarking using the Django Debug Toolbar and Locust load testing tool.
 
-- Data Classes (Python 3.7) for faster access with slots for reduced memory footprint.
+- Data Classes (Python 3.7) for faster access, compared to NamedTuple, with slots for reduced memory footprint.
 
 - [Argon2](https://github.com/p-h-c/phc-winner-argon2) password hasher for better password security.
 
