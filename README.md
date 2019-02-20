@@ -6,7 +6,29 @@ App with a shared item database, user specific inventory of items and units, and
 
 ---
 
-### Workflow:
+## Highlights:
+
+### Autocomplete
+
+Django 2 comes with autocomplete search out of the box! No need to write additional jQuery UI / AJAX.
+
+![](img/item-autocomplete.gif "Item Autocomplete")
+
+### Item Filtering
+
+This filters the Equipped Items by the relationship:
+
+**Unit** <-ManyToMany-> **Item-Instance** <-FK-> **Item** <-ManyToMany-> **Class**
+
+![](img/unit-item-filter.gif "Unit Item Filter")
+
+### Item Database Hiding
+
+Items added to the shared **Item Database** have an option to be made **Private** which renders the item only viewable by the owner. This allows users to list items in the database privately, and gives admins a tool to archive older versions of items and declutter the database view while maintaining backwards compatibility.
+
+---
+
+## Workflow:
 
 1. Add **Items**, and <b>Quantity</b> to your <b>Inventory</b> by searching the shared <b>Database</b> or adding a new Item
    <li>Add your <b>Units</b> and specifiy their total number of Item <b>Slots</b> </li>
@@ -16,14 +38,14 @@ App with a shared item database, user specific inventory of items and units, and
 
 ---
 
-### Technical:
+## Technical:
 
 - Reduce amount of Postgres's SQL queries with the use of QuerySet API's select_related() and prefetch_related().
 
   - Benchmarking using the Django Debug Toolbar and Locust load testing tool.
 
-- Data Classes (Python 3.7) for faster access, compared to NamedTuple, with slots for reduced memory footprint.
+- [Data Classes](https://www.youtube.com/watch?v=T-TwcmT6Rcw) (Python 3.7) for faster access, compared to NamedTuple (3.7), with slots for reduced memory footprint.
 
-- [Argon2](https://github.com/p-h-c/phc-winner-argon2) password hasher for better password security.
+- [Argon2](https://github.com/p-h-c/phc-winner-argon2) password hasher, over the default PBKDF2, for better password security.
 
 (Updating...)
