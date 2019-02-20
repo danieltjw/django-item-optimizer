@@ -10,13 +10,13 @@ App with a shared item database, user specific inventory of items and units, and
 
 ### Autocomplete
 
-Django 2 comes with autocomplete search out of the box! No need to write additional jQuery UI / AJAX.
+Django 2 comes with autocomplete search out of the box! No need to use additional jQuery UI / AJAX.
 
 ![](img/item-autocomplete.gif "Item Autocomplete")
 
 ### Item Filtering
 
-This filters the Equipped Items by the relationship:
+This filters a Unit's Equipped Items by the relationship:
 
 **Unit** <-ManyToMany-> **Item-Instance** <-FK-> **Item** <-ManyToMany-> **Class**
 
@@ -24,14 +24,16 @@ This filters the Equipped Items by the relationship:
 
 ### Item Database Hiding
 
-Items added to the shared **Item Database** have an option to be made **Private** which renders the item only viewable by the owner. This allows users to list items in the database privately, and gives admins a tool to archive older versions of items and declutter the database view while maintaining backwards compatibility.
+Items added to the shared **Item Database** have an option to be made **Private** which renders the item only viewable by the owner. This gives users the option to not list their items in the database. Furthermore, admins can use it to archive outdated items and declutter the database view all while maintaining backwards compatibility.
+
+![](img/item-private.png "Item Private Mode")
 
 ---
 
 ## Workflow:
 
 1. Add **Items**, and <b>Quantity</b> to your <b>Inventory</b> by searching the shared <b>Database</b> or adding a new Item
-   <li>Add your <b>Units</b> and specifiy their total number of Item <b>Slots</b> </li>
+   <li>Add your <b>Units</b> and specify their total number of Item <b>Slots</b> </li>
    <li>Order your <b>Units</b> by drag-and-drop; those on top will have priority</li>
    <li>Run a <b>Report</b> to see the best <b>Item Combination</b> for each <b>Unit</b></li>
    <li>A non-greedy algorithm is used to find the best Items combinations per Unit </li>
