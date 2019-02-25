@@ -1,6 +1,8 @@
 # Item Optimizer
 
-https://iopt.herokuapp.com
+Heroku Deployment: https://iopt.herokuapp.com
+
+Google App Engine Deployment: https://item-opt.appspot.com
 
 App with a shared item database, user specific inventory of items and units, and an algorithm to find the find the best item allocation strategy.
 
