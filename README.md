@@ -10,6 +10,16 @@ App with a shared item database, user specific inventory of items and units, and
 
 ## Highlights:
 
+### Auth0 Integrations
+
+In this deployment: https://item-opt.appspot.com
+
+[Auth0](https://auth0.com) authentication backend optional provides:
+
+- Protection against brute force attacks
+- Multi-factor authentication
+- Single Sign-On / Active Directory
+
 ### Autocomplete
 
 Django 2 comes with autocomplete search out of the box! No need to use additional jQuery UI / AJAX.
