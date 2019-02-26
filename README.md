@@ -20,11 +20,21 @@ In this deployment: https://item-opt.appspot.com
 - Multi-factor authentication
 - Single Sign-On / Active Directory
 
+---
+
+### Mobile Ready
+
+![](img/Mobile-Auth0-Login.png "Mobile Auth0 Login") ![](img/Mobile-Main.png "Mobile Main")
+
+---
+
 ### Autocomplete
 
 Django 2 comes with autocomplete search out of the box! No need to use additional jQuery UI / AJAX.
 
 ![](img/item-autocomplete.gif "Item Autocomplete")
+
+---
 
 ### Item Filtering
 
@@ -33,6 +43,8 @@ This filters a Unit's Equipped Items by the relationship:
 **Unit** <-ManyToMany-> **Item-Instance** <-FK-> **Item** <-ManyToMany-> **Class**
 
 ![](img/unit-item-filter.gif "Unit Item Filter")
+
+---
 
 ### Item Database Hiding
 
