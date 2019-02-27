@@ -16,7 +16,7 @@ In this deployment: https://item-opt.appspot.com
 
 [Auth0](https://auth0.com) authentication backend optional provides:
 
-- Protection against brute force attacks
+- Mitigates against brute force attacks
 - Multi-factor authentication
 - Single Sign-On / Active Directory
 
@@ -36,7 +36,7 @@ Django 2 comes with autocomplete search out of the box! No need to use additiona
 
 ---
 
-### Item Filtering
+### Database Filtering
 
 This filters a Unit's Equipped Items by the relationship:
 
@@ -46,7 +46,7 @@ This filters a Unit's Equipped Items by the relationship:
 
 ---
 
-### Item Database Hiding
+### Item Private Toggle
 
 Items added to the shared **Item Database** have an option to be made **Private** which renders the item only viewable by the owner. This gives users the option to not list their items in the database. Furthermore, admins can use it to archive outdated items and declutter the database view all while maintaining backwards compatibility.
 
@@ -56,7 +56,7 @@ Items added to the shared **Item Database** have an option to be made **Private*
 
 ## Workflow:
 
-1. Add **Items**, and <b>Quantity</b> to your <b>Inventory</b> by searching the shared <b>Database</b> or adding a new Item
+1. Add **Items**, and <b>Quantity</b>, to your <b>Inventory</b> by searching the shared <b>Database</b> or adding a new Item
    <li>Add your <b>Units</b> and specify their total number of Item <b>Slots</b> </li>
    <li>Order your <b>Units</b> by drag-and-drop; those on top will have priority</li>
    <li>Run a <b>Report</b> to see the best <b>Item Combination</b> for each <b>Unit</b></li>
