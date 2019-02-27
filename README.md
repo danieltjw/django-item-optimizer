@@ -22,7 +22,7 @@ In this deployment: https://item-opt.appspot.com
 
 ---
 
-### Mobile Ready
+### Mobile compatible
 
 ![](img/Mobile-Auth0-Login.png "Mobile Auth0 Login") ![](img/Mobile-Main.png "Mobile Main")
 
@@ -73,5 +73,7 @@ Items added to the shared **Item Database** have an option to be made **Private*
 - [Data Classes](https://www.youtube.com/watch?v=T-TwcmT6Rcw) (Python 3.7) for faster access, compared to NamedTuple (3.7), with slots for reduced memory footprint.
 
 - [Argon2](https://github.com/p-h-c/phc-winner-argon2) password hasher, over the default PBKDF2, for better password security.
+
+- Customising the user interface and workflow design by overwriting and extending Forms, Templates, TemplateResponse, list view default sort order.
 
 (Updating...)
