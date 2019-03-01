@@ -19,6 +19,7 @@ In this deployment: https://item-opt.appspot.com
 - Mitigates against brute force attacks
 - Multi-factor authentication
 - Single Sign-On / Active Directory
+- Existing database user migration
 
 ---
 
