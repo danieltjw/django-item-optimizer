@@ -25,17 +25,17 @@ In this deployment: https://item-opt.appspot.com
 
 ---
 
-### Mobile compatible
+### Autocomplete
 
-![](img/Mobile-Auth0-Login.png "Mobile Auth0 Login") ![](img/Mobile-Main.png "Mobile Main")
+Django 2 comes with autocomplete search out of the box!
+
+![](img/item-autocomplete.gif "Item Autocomplete")
 
 ---
 
-### Autocomplete
+### Mobile compatible
 
-Django 2 comes with autocomplete search out of the box! No need to use additional jQuery UI / AJAX.
-
-![](img/item-autocomplete.gif "Item Autocomplete")
+![](img/Mobile-Auth0-Login.png "Mobile Auth0 Login") ![](img/Mobile-Main.png "Mobile Main")
 
 ---
 
