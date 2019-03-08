@@ -1,16 +1,18 @@
 # Item Optimizer
 
-Google App Engine Deployment: https://item-opt.appspot.com
-
-AWS Lambda "Serverless" Deployment: https://pks3imvspa.execute-api.ca-central-1.amazonaws.com/dev
-
-Heroku Deployment: https://iopt.herokuapp.com
-
 App with a shared item database, user specific inventory of items and units, and an algorithm to find the find the best item allocation strategy.
 
 ---
 
-## Highlights:
+### Deployments:
+
+[Google App Engine Deployment](https://item-opt.appspot.com)
+
+[AWS Lambda "Serverless" Deployment](https://pks3imvspa.execute-api.ca-central-1.amazonaws.com/dev)
+
+[Heroku Deployment](https://iopt.herokuapp.com)
+
+---
 
 ### Auth0 Integrations
 
