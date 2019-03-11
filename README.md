@@ -8,9 +8,17 @@ App with a shared item database, user specific inventory of items and units, and
 
 [Google App Engine Deployment](https://item-opt.appspot.com)
 
+- Cloud SQL PostgreSQL
+
 [AWS Lambda "Serverless" Deployment](https://pks3imvspa.execute-api.ca-central-1.amazonaws.com/dev)
 
+- Amazon RDS PostgreSQL
+- Amazon S3 bucket
+
 [Heroku Deployment](https://iopt.herokuapp.com)
+
+- Heroku Postgres
+- Heroku Redis
 
 ---
 
