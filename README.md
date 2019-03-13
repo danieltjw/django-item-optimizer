@@ -1,6 +1,6 @@
 # Item Optimizer
 
-App with a shared item database, user specific inventory of items and units, and an algorithm to find the find the best item allocation strategy.
+Djano web application solutions that are secure, scalable, cost effective, future-proof and easy to maintain.
 
 ---
 
