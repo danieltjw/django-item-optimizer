@@ -1,21 +1,25 @@
 # Item Optimizer
 
-Djano web application solutions that are secure, scalable, cost effective, future-proof and easy to maintain.
+(Updating...)
+
+A public library where users can share items information and generate the best item combinations based on each user own item's inventory.
+
+Built using Django and deployed on 3 different cloud platforms. PostgreSQL (Django ORM) and optional MFA / 2FA integrations.
 
 ---
 
 ### Deployments:
 
-[Google App Engine Deployment](https://item-opt.appspot.com)
+[Google App Engine: https://item-opt.appspot.com](https://item-opt.appspot.com)
 
 - Cloud SQL PostgreSQL
 
-[AWS Lambda "Serverless" Deployment](https://pks3imvspa.execute-api.ca-central-1.amazonaws.com/dev)
+[AWS Lambda "Serverless": https://pks3imvspa.execute-api.ca-central-1.amazonaws.com/dev](https://pks3imvspa.execute-api.ca-central-1.amazonaws.com/dev)
 
 - Amazon RDS PostgreSQL
 - Amazon S3 bucket
 
-[Heroku Deployment](https://iopt.herokuapp.com)
+[Heroku Deployment: https://iopt.herokuapp.com](https://iopt.herokuapp.com)
 
 - Heroku Postgres
 - Heroku Redis
@@ -77,17 +81,33 @@ Items added to the shared **Item Database** have an option to be made **Private*
 
 ---
 
-## Technical:
+## Security:
+
+- [Argon2 password hasher](https://docs.djangoproject.com/en/2.2/topics/auth/passwords/#using-argon2-with-django), over the default PBKDF2, for better password security
+
+- Separate 'credentials.yaml' file to store credentials instead of settings.py to avoid committing secret keys into public repo (or through Heroku's config variable dashboard)
+
+---
+
+## Frontend:
+
+The frontend interface for users is made by subclassing Django's AdminSite class.
+
+- Leverages Django AdminSite in built features (such as autocomplete and list views) and also reduces the amount of testing required as the AdminSite class comes already tested.
+
+- Customising the user's AdminSite interface and workflow design by overwriting and extending Forms, Templates, TemplateResponse, list view default sort order
+
+- Admins and Staff have their own separate AdminSite to allow different levels of access control
+
+---
+
+## Optimization:
 
 - Reduce amount of Postgres's SQL queries with the use of QuerySet API's select_related() and prefetch_related()
 
-  - Benchmarking using the Django Debug Toolbar and Locust load testing tool
+  - Benchmarking using the Django Debug Toolbar (no. of SQL queries) and Locust load testing tool
 
 - [Data Classes](https://www.youtube.com/watch?v=T-TwcmT6Rcw) (Python 3.7) for faster access, compared to NamedTuple (3.7), with slots for reduced memory footprint
-
-- [Argon2](https://github.com/p-h-c/phc-winner-argon2) password hasher, over the default PBKDF2, for better password security
-
-- Customising the user interface and workflow design by overwriting and extending Forms, Templates, TemplateResponse, list view default sort order
 
 - AWS Lambda serverless deployment for scalability and cost-effectiveness (non-uniform utilization)
 
