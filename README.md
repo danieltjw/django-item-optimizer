@@ -53,7 +53,7 @@ class UserSite(admin.AdminSite):
   ...
 ```
 
-- Leverages Django's AdminSite in-built features (such as autocomplete and list views)
+- Leverages Django's AdminSite in-built features (such as autocomplete, filters, breadcrumps, list editable)
 
 - Reduces the amount of testing required as the AdminSite class has been pre-tested
 
