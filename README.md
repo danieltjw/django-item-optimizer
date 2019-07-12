@@ -90,11 +90,7 @@ Furthermore, Admins can use it to archive outdated items and thereby reduce the 
 
 ### Database Filtering
 
-This display a list of items that a unit could possible equip based on items in the inventory.
-
-To generate this list already equipped items by the relationship:
-
-**Inventory (Item Instance)** <FK> **User** <FK> **Item** <FK> **Unit's Role**
+This display a list of items that a unit could possibly equip based on items in the inventory.
 
 ```python
 class UnitUser(admin.ModelAdmin):
