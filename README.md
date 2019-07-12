@@ -6,6 +6,8 @@ A public library where users can share items information and generate the best i
 
 Built using Django and deployed on 3 different cloud platforms. PostgreSQL (Django ORM) and optional MFA / 2FA integrations.
 
+![](img/uml-item-optimizer.png "Item Optimizer UML")
+
 ---
 
 ### Deployments:
