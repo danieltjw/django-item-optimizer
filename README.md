@@ -131,6 +131,8 @@ Django 2 AdminSite comes with autocomplete search out of the box!
 
 - Separate 'credentials.yaml' file to store credentials instead of settings.py to avoid committing secret keys into public repo (or through Heroku's config variable dashboard)
 
+- Chose Django over other frameworks due to their security posture
+
 ---
 
 ## Optimization:
