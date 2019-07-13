@@ -61,6 +61,12 @@ class UserSite(admin.AdminSite):
 
 - Admins and Staff have their own separate AdminSite to allow different levels of access control
 
+  - Accessing the Admin Site as a standard user:
+
+<p align="center">
+  <img src=img/unauthorized-admin.png alt="Accessing the Admin Site as a standard user"/>
+</p>
+
 ---
 
 ### Auth0 Integrations
