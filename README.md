@@ -1,4 +1,4 @@
-# Item Optimizer
+# Inventory Optimizer
 
 A public library where users can share items information and generate the best item combinations based on each user own item's inventory.
 
