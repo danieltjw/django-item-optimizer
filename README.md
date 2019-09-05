@@ -1,6 +1,6 @@
 # Inventory Optimizer
 
-A public library where users can share items information and generate the best item combinations based on each user own item's inventory.
+A public library where users can contribute to a shared database and create their own individualized inventory from. A report can then be generated to show the best item allocation strategy.
 
 Built using Django and deployed on 3 different cloud platforms. PostgreSQL (Django ORM) and optional MFA / 2FA integrations.
 
@@ -8,7 +8,7 @@ Built using Django and deployed on 3 different cloud platforms. PostgreSQL (Djan
 
 ---
 
-### Deployments:
+### Deployments
 
 [Google App Engine: https://item-opt.appspot.com](https://item-opt.appspot.com)
 
@@ -26,19 +26,29 @@ Built using Django and deployed on 3 different cloud platforms. PostgreSQL (Djan
 
 ---
 
-### Mobile ready
-
-![](img/Mobile-Main.png "Mobile Main")
-
----
-
-## Workflow:
+## Workflow
 
 1. Add **Items**, and <b>Quantity</b>, to your <b>Inventory</b> by searching the public <b>Database</b> or adding a new Item
-   <li>Add your <b>Units</b> and specify their total number of Item <b>Slots</b> </li>
+   <li>Add your <b>Units</b> and specify their total number of Item <b>Slots</b> and any pre-existing items</li>
    <li>Order your <b>Units</b> by drag-and-drop; those on top will have priority</li>
    <li>Run a <b>Report</b> to see the best <b>Item Combination</b> for each <b>Unit</b></li>
    <li>A non-greedy algorithm is used to find the best Items combinations per Unit </li>
+
+---
+
+## Python business logic
+
+The report generation uses python for its business logic.
+
+- Python [\_\_slots\_\_](https://docs.python.org/3/reference/datamodel.html#slots) for memory optimization
+
+- [Data Classes](https://www.youtube.com/watch?v=T-TwcmT6Rcw) (Python 3.7) for faster access, compared to NamedTuple
+
+---
+
+### Mobile ready
+
+![](img/Mobile-Main.png "Mobile Main")
 
 ---
 
