@@ -54,8 +54,10 @@ The report generation uses python for its business logic.
 2. CubeJS uses Redis for caching
 3. React Frontend using API to communicate with CubeJS backend
 
-Create new Item Instance in My Inventory: 
+Add a new Item Instance to My Inventory: 
 [https://iopt.herokuapp.com](https://iopt.herokuapp.com)
+
+Count to 5 (CubeJS refresh rate has been set to 5s)
 
 Total number of Item Instances created for that month will be updated:
 [Graph showing new Item Instances created](https://iopt-cube.herokuapp.com)
