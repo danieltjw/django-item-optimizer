@@ -46,7 +46,7 @@ The report generation uses python for its business logic.
 
 ---
 
-### Analytics dashboard
+## Analytics dashboard
 
 [Cube Open Source Analytics Framework](https://github.com/cube-js/cube.js)
 
