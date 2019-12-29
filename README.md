@@ -46,6 +46,22 @@ The report generation uses python for its business logic.
 
 ---
 
+### Analytics dashboard
+
+[Cube Open Source Analytics Framework](https://github.com/cube-js/cube.js)
+
+1. CubeJS backend connected to Inventory database
+2. CubeJS uses Redis for caching
+3. React Frontend using API to communicate with CubeJS backend
+
+Create new Item Instance in My Inventory: 
+[Heroku Deployment: https://iopt.herokuapp.com](https://iopt.herokuapp.com)
+
+Total number of Item Instances created for that month will be updated:
+[Graph showing number of new Item instances created](https://iopt-cube.herokuapp.com)
+
+---
+
 ### Mobile ready
 
 ![](img/Mobile-Main.png "Mobile Main")
